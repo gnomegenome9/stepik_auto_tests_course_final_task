@@ -1,5 +1,3 @@
-from selenium import webdriver
-
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
@@ -22,3 +20,4 @@ class LoginPage(BasePage):
     def should_be_register_form(self):
         # реализуйте проверку, что есть форма регистрации на странице
         assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), "Register form is not presented"
+
